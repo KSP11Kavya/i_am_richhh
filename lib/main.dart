@@ -89,14 +89,48 @@ void main() {
           backgroundColor: Colors.purple[400],
         ),
         backgroundColor: Colors.purple[200],
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.cable),
+              label: 'cabel',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.camera_alt_rounded),
+              label: 'camera',
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.emergency), label: 'emergency'),
+          ],
+        ),
         body: Center(
           // child: Text('My name is kavya', ),
           child: Image(
             image: NetworkImage(
                 'https://cdn.pixabay.com/photo/2023/11/09/13/21/swallowtail-butterfly-8377375_1280.jpg'),
           ),
+          // child: Image(
+          //   image: AssetImage('assets/images/diamond.png'),
+          // ),
         ),
       ),
     ),
   );
 }
+//bottomNavigationBar: BottomNavigationBar(
+//         //   items: [
+//         //     BottomNavigationBarItem(
+//         //       icon: Icon(Icons.cable),
+//         //       label: 'cabel',
+//         //     ),
+//         //     BottomNavigationBarItem(
+//         //       icon: Icon(Icons.camera_alt_rounded),
+//         //       label: 'camera',
+//         //     ),
+//         //     BottomNavigationBarItem(
+//         //       icon: Icon(Icons.emergency),
+//         //       label: 'emergency',
+//         //     ),
+//         //   ],
+//         //
+//         // ),
